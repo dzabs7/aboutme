@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101820;  
+    color: #e0e0e0;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px;
+    background-color: #151a23; 
+    color: #00ffe7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 255, 231, 0.4);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00ffe7;
+    text-shadow: 0 0 8px #00ffe7;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    color: #00ffe7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ff4fd8; 
+}
+
+.content {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #00ffe7;
+    text-shadow: 0 0 15px #00ffe7;
+    margin-bottom: 20px;
+    text-align: center;
+    translate: 0px -15px;
+}
+
+.bio {
+    background-color: #1c1f26;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 231, 1 );
+    width: 60%;
+    margin: auto;
+    line-height: 1.6;
+    translate: 0px 0px;
+}
+
+.bio table {
+    width: 100%;
+}
+
+.bio .profile-photo img {
+    width: 250px; 
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 231, 0.3); 
+}
+
+.bio .profile-info {
+    padding-left: 20px; 
+    color: #e0e0e0;
+}
+
+.bio .profile-info p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin: 5px 0;
+}
+
+.bio .profile-info strong {
+    color: #ff4fd8; 
+}
+
+.artis-fav {
+    margin-top: 100px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.artis-fav h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #00ffe7;
+    text-shadow: 0 0 15px #00ffe7;
+    margin-bottom: 20px;
+}
+
+.favorite-artists {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.favorite-artists .artist {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.favorite-artists .artist:hover {
+    transform: scale(1.1);
+}
+
+.favorite-artists a {
+    text-decoration: none;
+}
+
+.favorite-artists .artist img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 255, 231, 1);
+}
+
+.favorite-artists .artist p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ff4fd8;
+    font-weight: bold;
+}
+
+.quote {
+    margin-top: 100px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.quote h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #00ffe7;
+    text-shadow: 0 0 15px #00ffe7;
+    margin-bottom: 20px;
+}
+
+.quote-box {
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 800px;
+    color: #e0e0e0;
+    font-style: italic;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.quote-box p {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+.footer {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    background-color: #151a23;
+    color: #00ffe7;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -10px 10px rgba(0, 255, 231, 0.2);
+    translate: 0px 10px; 
+}
+
+.footer a {
+    padding: 1rem 0;
+    color: #00ffe7;
+    margin: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer a:hover {
+    color: #ff4fd8;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+    translate: 0px 15px;
+}
+
+footer .credit a :hover{
+    color: #ff4fd8;
+}
